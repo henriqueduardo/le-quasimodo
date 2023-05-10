@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Poppins&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  max-width: 1400px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.bg-primary {
+  background:	#EEE600;
+}
+
+.color-primary {
+  color: #EEE600;
+}

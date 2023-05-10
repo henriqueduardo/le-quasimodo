@@ -1,0 +1,72 @@
+.hero-bg {
+    background: url(../../img/background.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height: 542px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.hero-text-bg {
+    width: 600px;
+}
+
+.hero-text-bg h1 {
+    font-family: 'Belleza', sans-serif;
+    font-weight: 900;
+    font-size: 4rem;
+}
+
+.cardapio-home-bg {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    margin-bottom: 36px;
+}
+
+.cardapio-home-bg h1 {
+    font-family: 'Belleza', sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.card-home {
+    width: 350px;
+}
+
+.card-home-text {
+    background: #F3F4F6;
+    padding: 10px 20px;
+    border-radius: 0px 0px 10px 10px;;
+}
+
+.card-home-title {
+    font-family: 'Belleza', sans-serif;
+    font-weight: 600;
+    font-size: 1.7rem;
+}
+
+.card-home-text p {
+    font-size: 14px;
+}
+
+.receita-bg {
+    width: 100%;
+    height: auto;
+}
+
+.receita-text {
+    width: 500px;
+}
+
+.receita-text h1 {
+    font-family: 'Belleza', sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.receita-img {
+    width: 600px;
+    object-fit: cover;
+}
