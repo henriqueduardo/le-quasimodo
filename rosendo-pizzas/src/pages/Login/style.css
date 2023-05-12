@@ -1,0 +1,23 @@
+.login-bg {
+    background: url(../../img/login-background.png);
+    background-position: center  center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    width: 100%;
+    padding-top: 1px;
+}
+
+.login-text {
+    font-family: 'Belleza', sans-serif;
+    font-weight: 900;
+    font-size: 4.5rem;
+    line-height: 60px;
+    letter-spacing: -0.75px;
+}
+
+@media (max-width: 770px ) {
+    .login-bg {
+        height: auto;
+    }
+}
