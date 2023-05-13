@@ -21,9 +21,9 @@ const Receita = () => {
       </div>
 
         <section>
-          <div className='container sm:px-12 p-4'>
+          <div className='container sm:px-12 p-4 flex'>
             <div className='preparo-box'>
-              <h2 className='uppercase text-center color-primary massa-title'>massa</h2>
+              <h2 className='uppercase massa-title'>massa</h2>
               <ul className='massa-list'>
                 <h3>ingredientes</h3>
                 <li>3 ¾ xícaras (chá) de farinha de trigo (cerca de 500 g)</li>
@@ -42,7 +42,7 @@ const Receita = () => {
                 <li>Unte com azeite uma assadeira grande de 34 cm X 28 cm. Transfira a massa para a assadeira e abra com as pontas dos dedos para ficar no formato retangular – cuidado para não furar a massa. Cubra com um pano e deixe fermentar por mais 1 hora, ou até a massa crescer e ficar com uma textura aerada, com algumas bolhas na superfície.</li>
                 <li>Quando faltar 30 minutos para completar 1 hora, preaqueça o forno a 200 ºC (temperatura média) e prepare os ingredientes da cobertura.</li>
               </ol>
-              <h2 className='uppercase text-center color-primary massa-title'>recheio</h2>
+              <h2 className='uppercase massa-title'>recheio</h2>
               <ul className='massa-list'>
                 <h3>ingredientes</h3>
                 <li>1 cebola</li>
@@ -58,6 +58,43 @@ const Receita = () => {
                 <li>Espalhe o molho de tomate sobre a massa e distribua as fatias de bacon e cebola por toda superfície. Regue com o azeite e leve ao forno para assar por cerca de 45 minutos, ou até dourar.</li>
                 <li>Retire do forno e sirva a seguir. Essa pizza também é uma delícia servida fria.</li>
               </ol>
+            </div>
+            <div className='preparo-box'>
+              <h2 className='uppercase mt-10 cardapio-sugestao-title'>sugestões</h2>
+              <div className='flex flex-col gap-10'>
+                <div>
+                  <a href="#" className='flex gap-5'>
+                  <div class="relative max-w-xs overflow-hidden bg-cover bg-no-repeat">
+                    <img src='https://d2ng48q17pwd8f.cloudfront.net/Custom/Content/Products/11/32/1132803_pizza-up-pepperoni-c-gorg-500g-36413_m2_637920098686005608.png' className='cardapio-sugestao-img max-w-xs transition duration-300 ease-in-out hover:scale-110'/>
+                  </div>
+                    <p className='mt-5 text-zinc-800'>Pizza de Pepperoni</p>
+                  </a>
+                </div>
+                <div>
+                  <a href="#" className='flex gap-5'>
+                  <div class="relative max-w-xs overflow-hidden bg-cover bg-no-repeat">
+                    <img src='https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-quatro-queijos-00.jpg' className='cardapio-sugestao-img max-w-xs transition duration-300 ease-in-out hover:scale-110'/>
+                  </div>
+                    <p className='mt-5 text-zinc-800'>Pizza de 4 queijos</p>
+                  </a>
+                </div>
+                <div>
+                  <a href="#" className='flex gap-5'>
+                  <div class="relative max-w-xs overflow-hidden bg-cover bg-no-repeat">
+                    <img src='https://res.cloudinary.com/buzzfeed-brasil/image/upload/q_auto,f_auto/image-uploads/subbuzz-images/jpeg/e9e9d10e95a79828b9e09778f934b3e0.jpg' className='cardapio-sugestao-img max-w-xs transition duration-300 ease-in-out hover:scale-110'/>
+                  </div>
+                    <p className='mt-5 text-zinc-800'>Pizza de Calabresa</p>
+                  </a>
+                </div>
+                <div>
+                  <a href="#" className='flex gap-5'>
+                  <div class="relative max-w-xs overflow-hidden bg-cover bg-no-repeat">
+                    <img src='https://rossopizza.com.br/salao/wp-content/uploads/2019/09/istock-181175167.jpg' className='cardapio-sugestao-img max-w-xs transition duration-300 ease-in-out hover:scale-110'/>
+                  </div>
+                    <p className='mt-5 text-zinc-800'>Pizza de Margheritta</p>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </section>

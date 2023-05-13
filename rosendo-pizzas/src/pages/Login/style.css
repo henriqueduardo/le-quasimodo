@@ -14,6 +14,20 @@
     font-size: 4.5rem;
     line-height: 60px;
     letter-spacing: -0.75px;
+    position: relative;
+    z-index: 99;
+}
+
+.login-text::before {
+    position: absolute;
+    top: 48px;
+    left: 0px;
+    content: '';
+    width: 60px;
+    height: 10px;
+    background: #EEE600;
+    z-index: -2;
+    border-radius: 0.25rem;
 }
 
 @media (max-width: 770px ) {

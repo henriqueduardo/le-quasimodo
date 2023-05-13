@@ -4,18 +4,16 @@ import ProdutosList from '../../components/ProdutosList';
 import pizza from "../../img/pizza.jpg";
 import { Link } from "react-router-dom";
 import splash from "../../img/splash.png";
-import flash from "../../img/flash.svg";
 
 const Home = () => {
   return (
     <>
         <div className='hero-bg'>
           <main className='relative top-16 container'>
-              <div class="mt-12 sm:px-12 p-4 hero-text-bg">
-                  <h1 class="text-4xl text-black md:text-5xl">True italian pizza taste. Delivered at the speed of flash</h1>
+              <div className="mt-12 sm:px-12 p-4 hero-text-bg">
+                  <h1 className="text-4xl text-black md:text-5xl">True italian pizza taste. Delivered at the speed of flash</h1>
                   <img src={splash} className='splash-effect'/>
                   <p className='text-zinc-600 mt-5'>Delicious thin crust pizza, flavour-packed starters and exquisite cocktails. Delivering the passion and truly italian taste right into your heart</p>
-                  <img src={flash} className='flash-effect'/>
               </div>
           </main>
         </div>

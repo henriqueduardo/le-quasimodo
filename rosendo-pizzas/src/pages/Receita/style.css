@@ -15,23 +15,27 @@
     font-style: italic;
 }
 
-.massa-title {
-    font-size: 2rem;
+.preparo-box {
     width: 50%;
+}
+
+.massa-title {
+    font-size: 3rem;
     margin-bottom: 30px;
     position: relative;
-    z-index: 99;
+    letter-spacing: -0.75px;
 }
 
 .massa-title::before {
     position: absolute;
-    left: 0;
-    right: 0;
-    top: 50%;
-    height: 1px;
-    z-index: -1;
-    background-color: #d8d8d8;
-    content: "";
+    top: 48px;
+    left: -5px;
+    content: '';
+    width: 20px;
+    height: 5px;
+    background: #EEE600;
+    z-index: -2;
+    border-radius: 0.25rem;
 }
 
 .massa-list {
@@ -51,7 +55,7 @@
 
 .massa-list-preparo {
     list-style: decimal;
-    width: 50%;
+    width: 85%;
 }
 .massa-list-preparo li {
     margin-left: 40px;
@@ -62,4 +66,31 @@
     text-transform: uppercase;
     font-size: 1.5rem;
     margin-bottom: 20px;
+}
+
+.cardapio-sugestao-title {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    letter-spacing: -0.75px;
+    font-family: 'Belleza', sans-serif;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.cardapio-sugestao-title::before {
+    position: absolute;
+    top: 40px;
+    left: -5px;
+    content: '';
+    width: 30px;
+    height: 5px;
+    background: #EEE600;
+    z-index: -2;
+    border-radius: 0.25rem;
+}
+
+.cardapio-sugestao-img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
 }
