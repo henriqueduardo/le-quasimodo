@@ -1,0 +1,22 @@
+.sabores-box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    overflow-x: auto;
+    gap: 30px;
+}
+
+.sabores-box::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  .sabores-box::-webkit-scrollbar-thumb {
+    background-color: #EEE600;
+    border-radius: 4px;
+  }
+  
+  .sabores-box::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    border-radius: 4px;
+  }

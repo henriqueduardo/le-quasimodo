@@ -1,0 +1,195 @@
+.hero-bg {
+    background: url(../../img/background.png);
+    background-position: center  center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    width: 100%;
+    padding-top: 1px;
+}
+
+.hero-text-bg {
+    width: 660px;
+    position: relative;
+    z-index: 20;
+}
+
+.hero-text-bg h1 {
+    font-family: 'Belleza', sans-serif;
+    font-weight: 900;
+    font-size: 4rem;
+}
+
+.chef-effect {
+    width: 66px;
+    position: absolute;
+    top: -47px;
+    z-index: -3;
+    left: 41px;
+}
+
+.italia-effect {
+    width: 45px;
+    position: absolute;
+    top: 150px;
+    z-index: -3;
+    left: 440px;
+}
+
+.torre-effect {
+    width: 50px;
+    position: absolute;
+    top: 280px;
+    z-index: -3;
+    left: 170px;
+}
+
+.le-quasimodo {
+    font-weight: 900;
+    font-style: italic;
+}
+
+.cardapio-home-bg {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    margin-bottom: 36px;
+}
+
+.cardapio-home-bg h1 {
+    font-family: 'Belleza', sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.card-home {
+    border-radius: 10px 10px 0px 0px;
+    min-width: 380px;
+    margin-bottom: 40px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.12);
+}
+
+.card-home-text {
+    background: #f1f1f1;
+    padding: 10px 20px;
+}
+
+.card-home-title {
+    font-family: 'Belleza', sans-serif;
+    font-weight: 600;
+    font-size: 1.7rem;
+}
+
+.card-home-text p {
+    font-size: 14px;
+}
+
+.receita-bg {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.receita-text {
+    width: 500px;
+    position: relative;
+    z-index: 19;
+}
+
+.receita-text h1 {
+    font-family: 'Belleza', sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    position: relative;
+}
+
+.pizza-svg {
+    width: 60px;
+    position: absolute;
+    left: 370px;
+    top: 35px;
+}
+
+.cebola-svg {
+    width: 60px;
+    position: absolute;
+    left: 390px;
+    top: 100px;
+}
+
+.receita-img {
+    width: 600px;
+    object-fit: cover;
+}
+
+.card-review-receita {
+    padding: 20px 20px;
+    border-radius: 10px;
+    font-size: 12px;
+    backdrop-filter: blur(2px);
+    background: #ffffff63;
+    width: 250px;
+    position: absolute;
+    bottom: 250px;
+    right: 400px;
+}
+
+.card-review-receita-2 {
+    padding: 20px 20px;
+    border-radius: 10px;
+    font-size: 12px;
+    backdrop-filter: blur(2px);
+    background: #ffffff63;
+    width: 250px;
+    position: absolute;
+    bottom: 155px;
+    right: 100px;
+}
+
+.card-review-receita-3 {
+    padding: 20px 20px;
+    border-radius: 10px;
+    font-size: 12px;
+    backdrop-filter: blur(2px);
+    background: #ffffff63;
+    width: 250px;
+    position: absolute;
+    bottom: 50px;
+    right: 375px;
+}
+
+.destaque-bg {
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    background: #EEE600;
+}
+
+.destaque-text {
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+.aspas-esquerda, .aspas-direita {
+    position: relative;
+}
+
+.aspas-esquerda::before {
+    position: absolute;
+    content: '“';
+    top: -50px;
+    right: 5px;
+    font-size: 6rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.aspas-direita::before {
+    position: absolute;
+    content: '”';
+    top: -15px;
+    left: 5px;
+    font-size: 6rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
