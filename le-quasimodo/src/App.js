@@ -10,6 +10,7 @@ import ReceitaBacon from './pages/ReceitaBacon';
 import ReceitaPeperoni from './pages/ReceitaPeperoni';
 import ReceitaQueijo from './pages/ReceitaQueijo';
 import ReceitaCalabresa from './pages/ReceitaCalabresa';
+import PrivateRoute from './routes/private-route';
 
 function App() {
   return (
@@ -17,7 +18,11 @@ function App() {
     <AuthProvider>
       <Header/>
             <Routes>
-              <Route path='/' element={<Home/>}/>
+              <Route path='/' element={
+                <PrivateRoute>
+                  <Home/>
+                </PrivateRoute>
+            }/>
               <Route path='/login' element={<Login/>}/>
               <Route path='/receitaBacon' element={<ReceitaBacon/>}/>
               <Route path='/receitaPeperoni' element={<ReceitaPeperoni/>}/>

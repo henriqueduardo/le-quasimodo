@@ -5,6 +5,7 @@ const AuthContext = createContext();
 const AuthProvider = ( {children} ) => {
 
     const [userLogged, setUserLogged] = useState(false);
+    const [loading, setLoading] = useState(true);
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -13,6 +14,8 @@ const AuthProvider = ( {children} ) => {
         if(userInfo) {
             setUserLogged(true);
         }
+
+        setLoading(false)
     }, []);
 
     const loginUser = async (inputValues) => {
@@ -30,8 +33,18 @@ const AuthProvider = ( {children} ) => {
         setUserLogged(true);
     }
 
+    const logoutUser = () => {
+      setUserLogged(false);
+      localStorage.clear();
+      navigate("/login");
+    }
+
+    if(loading) {
+      return <p>Carregando</p>
+    }
+
   return (
-    <AuthContext.Provider value={{userLogged, loginUser}}>
+    <AuthContext.Provider value={{userLogged, loginUser, logoutUser}}>
         { children }
     </AuthContext.Provider>
   )
