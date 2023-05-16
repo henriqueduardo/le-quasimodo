@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import "./style.css";
 import quasimoto from "../../img/quasimoto-pizza.jpg";
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../context/AuthContext';
 
 const Login = () => {
@@ -53,7 +53,7 @@ const Login = () => {
             </form>
             
 
-            <a className='mt-5 cursor-pointer hover:underline text-white'>Criar conta</a>
+            <Link to="/register" className='mt-5 cursor-pointer hover:underline text-white'>Criar conta</Link>
           </div>
 
           

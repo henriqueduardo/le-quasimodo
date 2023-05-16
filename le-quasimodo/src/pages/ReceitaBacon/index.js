@@ -1,5 +1,5 @@
 import React from 'react'
-import Receita from '../Receita';
+import Receita from '../../components/Receita';
 
 const ReceitaBacon = () => {
 

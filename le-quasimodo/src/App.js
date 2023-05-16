@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import Home from './pages/Home';
 import Login from './pages/Login';
+import Register from './pages/Register';
 import Cardapio from './pages/Cardapio';
 import { AuthProvider } from './context/AuthContext';
 import ReceitaBacon from './pages/ReceitaBacon';
@@ -24,6 +25,7 @@ function App() {
                 </PrivateRoute>
             }/>
               <Route path='/login' element={<Login/>}/>
+              <Route path='/register' element={<Register/>}/>
               <Route path='/receitaBacon' element={<ReceitaBacon/>}/>
               <Route path='/receitaPeperoni' element={<ReceitaPeperoni/>}/>
               <Route path='/receitaQueijo' element={<ReceitaQueijo/>}/>
