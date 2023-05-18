@@ -33,7 +33,7 @@ const Register = () => {
 
   return (
     <>
-        <div className='register-bg'>
+      <div className='register-bg'>
       <main className='relative container top-4'>
       <section className="text-gray-400">
         <div className="sm:px-12 p-4 mt-16 mx-auto flex flex-wrap items-center">
@@ -76,7 +76,7 @@ const Register = () => {
       </div>
       </section>
       </main>
-    </div>
+      </div>
     </>
   )
 }

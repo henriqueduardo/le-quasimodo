@@ -14,6 +14,7 @@ import ReceitaCalabresa from './pages/ReceitaCalabresa';
 import PrivateRoute from './routes/private-route';
 import Admin from './pages/Admin';
 import AddProdutos from './pages/AddProdutos';
+import EditProduct from './pages/EditarProdutos';
 
 function App() {
   return (
@@ -38,9 +39,14 @@ function App() {
                   <Admin/>
                 </PrivateRoute>
             }/>
-            <Route path='/novo-produto' element={
+            <Route path='/admin/novo-produto' element={
                 <PrivateRoute>
                   <AddProdutos/>
+                </PrivateRoute>
+            }/>
+            <Route path='/admin/editar-produto/:id' element={
+                <PrivateRoute>
+                  <EditProduct/>
                 </PrivateRoute>
             }/>
             </Routes>

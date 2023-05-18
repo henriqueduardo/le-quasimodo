@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import "./style.css";
 import { FaEdit } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { findAllProducts } from '../../services/produto-service';
 
 const Admin = () => {
@@ -26,7 +26,7 @@ const Admin = () => {
     <div className='admin-bg'>
           <main className='container my-12 max-w-screen-xl mx-auto px-6'>
               <div className="mt-28 flex justify-end space-y-2">
-                  <button className='p-2 bg-primary rounded' onClick={() => navigate('/novo-produto')}>Novo produto</button>
+                  <button className='p-2 bg-primary rounded' onClick={() => navigate('/admin/novo-produto')}>Novo produto</button>
               </div>
               <div className='flex flex-col my-8'> 
                 <div className='overflow-x-auto sm:-mx-6 lg:-mx-8'>
@@ -84,7 +84,9 @@ const Admin = () => {
 
                                         <td className='px-6 py-4 whitespace-nowrap flex flex-col h-24 items-center justify-center'>
                                             <div className='flex items-center justify-center space-x-3'>
+                                                <Link to={`/admin/editar-produto/${product._id}`}>
                                                 <FaEdit className='cursor-pointer text-2xl text-zinc-600'/>
+                                                </Link>
                                                 <MdDelete className='cursor-pointer text-2xl text-red-600'/>
                                             </div>
                                         </td>

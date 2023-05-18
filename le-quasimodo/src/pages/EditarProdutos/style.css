@@ -1,0 +1,10 @@
+.edit-bg {
+    background: url(../../img/login-background2.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    padding-bottom: 60px;
+    width: 100%;
+    padding-top: 1px;
+}
