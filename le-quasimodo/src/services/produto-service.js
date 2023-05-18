@@ -20,4 +20,9 @@ const updateProductById = (id, productEdit) =>
     .then((response) => response)
     .catch((err) => err)
 
-export { addProdutoApi, findAllProducts, findProductById, updateProductById };
+const deleteProduct = (id) => 
+    api.delete(`/produto/remove/${id}`)
+    .then((response) => response)
+    .catch((err) => err)
+
+export { addProdutoApi, findAllProducts, findProductById, updateProductById, deleteProduct };

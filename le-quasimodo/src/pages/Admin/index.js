@@ -3,7 +3,7 @@ import "./style.css";
 import { FaEdit } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
 import { Link, useNavigate } from 'react-router-dom';
-import { findAllProducts } from '../../services/produto-service';
+import { findAllProducts, deleteProduct } from '../../services/produto-service';
 
 const Admin = () => {
 
@@ -18,6 +18,14 @@ const Admin = () => {
     const getAllProducts = async () => {
         const response = await findAllProducts();
         setProducts(response.data);
+    }
+
+    const removeProduct = async (id) => {
+        const answer = window.confirm("O produto será removido, deseja continuar?");
+        if(answer) {
+            await deleteProduct(id);
+            getAllProducts();
+        }
     }
 
 
@@ -87,7 +95,7 @@ const Admin = () => {
                                                 <Link to={`/admin/editar-produto/${product._id}`}>
                                                 <FaEdit className='cursor-pointer text-2xl text-zinc-600'/>
                                                 </Link>
-                                                <MdDelete className='cursor-pointer text-2xl text-red-600'/>
+                                                <MdDelete className='cursor-pointer text-2xl text-red-600' onClick={() => removeProduct(product._id)}/>
                                             </div>
                                         </td>
                                 </tr>
