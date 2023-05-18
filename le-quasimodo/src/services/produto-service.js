@@ -5,4 +5,9 @@ const addProdutoApi = (product) =>
     .then((response) => response)
     .catch((err) => err)
 
-export { addProdutoApi };
+const findAllProducts = () => 
+    api.get('/produto/findAll')
+    .then((response) => response)
+    .catch((err) => err)
+
+export { addProdutoApi, findAllProducts };

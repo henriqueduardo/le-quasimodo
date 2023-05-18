@@ -1,11 +1,20 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Produto from '../Produto';
-import pizzasMock from '../../mock/pizzas-cards';
 import "./style.css";
+import { findAllProducts } from '../../services/produto-service';
 
 const ProdutosList = () => {
   
-  const [produtos, setProdutos] = useState(pizzasMock);
+  const [produtos, setProdutos] = useState([]);
+
+  useEffect(() => {
+    getAllProducts();
+  }, [])
+
+  const getAllProducts = async () => {
+    const response = await findAllProducts();
+    setProdutos(response.data);
+  }
 
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);

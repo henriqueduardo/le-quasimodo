@@ -1,12 +1,25 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import "./style.css";
 import { FaEdit } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
 import { useNavigate } from 'react-router-dom';
+import { findAllProducts } from '../../services/produto-service';
 
 const Admin = () => {
 
     const navigate = useNavigate();
+
+    const [products, setProducts] = useState([]);
+
+    useEffect(() => {
+        getAllProducts();
+    }, [])
+
+    const getAllProducts = async () => {
+        const response = await findAllProducts();
+        setProducts(response.data);
+    }
+
 
   return (
     <>
@@ -46,57 +59,27 @@ const Admin = () => {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    
-                                <tr className='bg-white border-b'>
+                                {products.map(product => (
+                                <tr key={product._id} className='bg-white border-b'>
                                         <td className='px-6 py-4 whitespace-nowrap text-sm font-medium'>
-                                            <img src='' alt='imagem'/>
+                                            <img src={product.imagem} alt={product.pizzaSabor} className='w-32 object-cover'/>
                                         </td>
                                         <td className='px-6 py-4 whitespace-nowrap text-sm font-medium'>
-                                            produto 1
+                                            {product.pizzaSabor}
                                         </td>
                                         <td className='px-6 py-4 whitespace-nowrap text-sm font-medium'>
-                                            $5
+                                        {product.precoUnidade}
                                         </td>
                                         <td className='px-6 py-4 whitespace-nowrap text-sm font-medium'>
-                                            grande
-                                        </td>
-
-                                        <td className='px-6 py-4 whitespace-nowrap text-sm font-medium'>
-                                            sim
+                                        {product.tamanho}
                                         </td>
 
                                         <td className='px-6 py-4 whitespace-nowrap text-sm font-medium'>
-                                            não
-                                        </td>
-
-                                        <td className='px-6 py-4 whitespace-nowrap flex flex-col h-24 items-center justify-center'>
-                                            <div className='flex items-center justify-center space-x-3'>
-                                                <FaEdit className='cursor-pointer text-2xl text-zinc-600'/>
-                                                <MdDelete className='cursor-pointer text-2xl text-red-600'/>
-                                            </div>
-                                        </td>
-                                    </tr>
-
-                                    <tr className='bg-white border-b'>
-                                        <td className='px-6 py-4 whitespace-nowrap text-sm font-medium'>
-                                            <img src='' alt='imagem'/>
-                                        </td>
-                                        <td className='px-6 py-4 whitespace-nowrap text-sm font-medium'>
-                                            produto 1
-                                        </td>
-                                        <td className='px-6 py-4 whitespace-nowrap text-sm font-medium'>
-                                            $5
-                                        </td>
-                                        <td className='px-6 py-4 whitespace-nowrap text-sm font-medium'>
-                                            grande
+                                        {product.refrigerante}
                                         </td>
 
                                         <td className='px-6 py-4 whitespace-nowrap text-sm font-medium'>
-                                            sim
-                                        </td>
-
-                                        <td className='px-6 py-4 whitespace-nowrap text-sm font-medium'>
-                                            não
+                                        {product.bordaRecheada}
                                         </td>
 
                                         <td className='px-6 py-4 whitespace-nowrap flex flex-col h-24 items-center justify-center'>
@@ -105,37 +88,8 @@ const Admin = () => {
                                                 <MdDelete className='cursor-pointer text-2xl text-red-600'/>
                                             </div>
                                         </td>
-                                    </tr>
-                                    
-                                    <tr className='bg-white border-b'>
-                                        <td className='px-6 py-4 whitespace-nowrap text-sm font-medium'>
-                                            <img src='' alt='imagem'/>
-                                        </td>
-                                        <td className='px-6 py-4 whitespace-nowrap text-sm font-medium'>
-                                            produto 1
-                                        </td>
-                                        <td className='px-6 py-4 whitespace-nowrap text-sm font-medium'>
-                                            $5
-                                        </td>
-                                        <td className='px-6 py-4 whitespace-nowrap text-sm font-medium'>
-                                            grande
-                                        </td>
-
-                                        <td className='px-6 py-4 whitespace-nowrap text-sm font-medium'>
-                                            sim
-                                        </td>
-
-                                        <td className='px-6 py-4 whitespace-nowrap text-sm font-medium'>
-                                            não
-                                        </td>
-
-                                        <td className='px-6 py-4 whitespace-nowrap flex flex-col h-24 items-center justify-center'>
-                                            <div className='flex items-center justify-center space-x-3'>
-                                                <FaEdit className='cursor-pointer text-2xl text-zinc-600'/>
-                                                <MdDelete className='cursor-pointer text-2xl text-red-600'/>
-                                            </div>
-                                        </td>
-                                    </tr>
+                                </tr>
+                                ))}
                                     
                                 </tbody>
                             </table>
