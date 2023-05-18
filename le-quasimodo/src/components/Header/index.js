@@ -28,8 +28,7 @@ const Header = () => {
               userLogged ? (
                 <div className='flex gap-2 items-center'>
                   <Link to="/cardapio" className="bg-transparent py-2 text-white">Cardapio</Link>
-                  <img src=''/>
-                  <p className='text-white py-2'> nome </p>
+                  <Link to="/admin" className="bg-transparent py-2 text-white">Admin</Link>
                   <TfiShoppingCart className='w-12 h-10 bg-transparent py-2 text-white cursor-pointer'/>
                   <SlLogout className="bg-transparent w-12 h-10 py-2 text-white cursor-pointer" onClick={logoutUser}/>
                 </div>

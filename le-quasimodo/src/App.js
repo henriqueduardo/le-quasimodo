@@ -12,6 +12,8 @@ import ReceitaPeperoni from './pages/ReceitaPeperoni';
 import ReceitaQueijo from './pages/ReceitaQueijo';
 import ReceitaCalabresa from './pages/ReceitaCalabresa';
 import PrivateRoute from './routes/private-route';
+import Admin from './pages/Admin';
+import AddProdutos from './pages/AddProdutos';
 
 function App() {
   return (
@@ -31,6 +33,16 @@ function App() {
               <Route path='/receitaQueijo' element={<ReceitaQueijo/>}/>
               <Route path='/receitaCalabresa' element={<ReceitaCalabresa/>}/>
               <Route path='/cardapio' element={<Cardapio/>}/>
+              <Route path='/admin' element={
+                <PrivateRoute>
+                  <Admin/>
+                </PrivateRoute>
+            }/>
+            <Route path='/novo-produto' element={
+                <PrivateRoute>
+                  <AddProdutos/>
+                </PrivateRoute>
+            }/>
             </Routes>
       <Footer/>
     </AuthProvider>

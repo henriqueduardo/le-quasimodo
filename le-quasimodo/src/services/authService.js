@@ -10,4 +10,10 @@ const registerUser = (AddUserValues) =>
     .then((response) => response)
     .catch((err) => console.error("erro na requisição", err));
 
-export { loginUserApi, registerUser };
+const getUserById = (idUser) => {
+    return api.get(`/usuario/findById/${idUser}`)
+    .then(response => response)
+    .catch((err) => err)
+}
+
+export { loginUserApi, registerUser, getUserById };
