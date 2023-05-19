@@ -32,7 +32,7 @@ const Admin = () => {
   return (
     <>
     <div className='admin-bg'>
-          <main className='container my-12 max-w-screen-xl mx-auto px-6'>
+          <main className='container my-12 max-w-screen-xl mx-auto px-6 sm:px-12 p-4'>
               <div className="mt-28 flex justify-end space-y-2">
                   <button className='p-2 bg-primary rounded' onClick={() => navigate('/admin/novo-produto')}>Novo produto</button>
               </div>

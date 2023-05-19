@@ -16,8 +16,8 @@
 .trigo-svg {
     width: 50px;
     position: absolute;
-    top: 150px;
-    left: 400px;
+    top: 280px;
+    left: 370px;
 }
 
 .queijo-svg {
@@ -25,14 +25,6 @@
     position: absolute;
     top: 280px;
     left: 300px;
-}
-
-.azeite-svg {
-    width: 100px;
-    position: absolute;
-    top: 255px;
-    left: 370px;
-    z-index: 6;
 }
 
 .tempo-box {

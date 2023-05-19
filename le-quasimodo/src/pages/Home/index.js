@@ -68,7 +68,7 @@ const Home = () => {
                       <span>Lord Quas</span>
                     </div>
                   </div>
-                    <p className='text-zinc-900 mt-2'>Expêriencia única. Excelente.</p>
+                    <p className='text-zinc-900 mt-2'>Pizza impecável.</p>
                 </div>
 
                 <div className='card-review-receita-3'>
@@ -79,7 +79,7 @@ const Home = () => {
                       <span>Lord Quas</span>
                     </div>
                   </div>
-                    <p className='text-zinc-900 mt-2'>Expêriencia única. Excelente.</p>
+                    <p className='text-zinc-900 mt-2'>Entrega rápida, serviço perfeito.</p>
                 </div>
 
             </div>
@@ -92,6 +92,7 @@ const Home = () => {
           </div>
           
         </section>
+
     </>
   )
 }

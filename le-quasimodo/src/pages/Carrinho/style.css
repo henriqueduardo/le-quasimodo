@@ -1,0 +1,20 @@
+.carrinho-title {
+    font-family: 'Belleza', sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    letter-spacing: -0.75px;
+    position: relative;
+    z-index: 10;
+}
+
+.carrinho-title::before {
+    position: absolute;
+    top: 27px;
+    left: -5px;
+    content: '';
+    width: 40px;
+    height: 10px;
+    background: #EEE600;
+    z-index: -2;
+    border-radius: 0.25rem;
+}

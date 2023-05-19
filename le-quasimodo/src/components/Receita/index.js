@@ -2,7 +2,6 @@ import React from 'react';
 import "./style.css";
 import trigo from "../../img/trigo.svg"
 import queijo from "../../img/queijo.svg"
-import azeite from "../../img/azeite.svg"
 import { Link } from 'react-router-dom';
 
 const Receita = ({ name, descricao, tempo, porcoes, URLreceitaUm, ReceitaSugesUmImg, ReceitaSugesUmName, URLreceitaDois, ReceitaSugesDoisImg, ReceitaSugesDoisName, URLreceitaTres, ReceitaSugesTresImg, ReceitaSugesTresName }) => {
@@ -16,7 +15,6 @@ const Receita = ({ name, descricao, tempo, porcoes, URLreceitaUm, ReceitaSugesUm
                 <img src={trigo} className='trigo-svg'/>
                 <p className='text-zinc-700'>{descricao}</p>
                 <img src={queijo} className='queijo-svg'/>
-                <img src={azeite} className='azeite-svg'/>
                   <div className='tempo-box text-zinc-900'>
                     <p>{tempo}</p>
                     <p>{porcoes}</p>

@@ -1,0 +1,24 @@
+.produto-info-bg {
+    background: #fff;
+}
+
+.title-info {
+    font-family: 'Belleza', sans-serif;
+    font-weight: 900;
+    font-size: 4rem;
+    letter-spacing: -0.75px;
+    position: relative;
+    z-index: 10;
+}
+
+.title-info::before {
+    position: absolute;
+    top: 35px;
+    left: -5px;
+    content: '';
+    width: 55px;
+    height: 10px;
+    background: #EEE600;
+    z-index: -2;
+    border-radius: 0.25rem;
+}

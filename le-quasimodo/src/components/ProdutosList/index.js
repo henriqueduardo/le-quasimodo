@@ -1,19 +1,19 @@
 import React, { useEffect, useState } from 'react';
-import Produto from '../Produto';
+import Product from '../Produto';
 import "./style.css";
 import { findAllProducts } from '../../services/produto-service';
 
 const ProdutosList = () => {
   
-  const [produtos, setProdutos] = useState([]);
+  const [products, setProducts] = useState([]);
 
   useEffect(() => {
     getAllProducts();
   }, [])
 
-  const getAllProducts = async () => {
+  const getAllProducts = async() => {
     const response = await findAllProducts();
-    setProdutos(response.data);
+    setProducts(response.data);
   }
 
   const [isDragging, setIsDragging] = useState(false);
@@ -40,15 +40,15 @@ const ProdutosList = () => {
 
   return (
     <div
-      className="sabores-box cursor-pointer"
+      className="sabores-box"
       onMouseDown={handleMouseDown}
       onMouseMove={handleMouseMove}
       onMouseUp={handleMouseUp}
       onMouseLeave={handleMouseUp}
     >
-      {produtos.map((produto) => (
-        <Produto key={produto._id} produto={produto} />
-      ))}
+      {products.map(product => (
+          <Product key={product._id} product={product}/>
+        ))}
     </div>
   );
 };
