@@ -19,9 +19,9 @@ const Header = () => {
           <div className="flex items-center justify-between bg-opacity-30">
             <nav className="flex items-center text-sm font-medium text-gray-800">
                   <div>
-                      <Link to="/"><img src={logo} alt="Logo" className="w-12"/></Link>
+                      <Link to="/"><img src={logo} alt="Logo" className="w-12 logo-icon"/></Link>
                   </div>
-                  <p className='font-bold text-lg text-zinc-900 ml-2'>Le Quasimodo</p>
+                  <p className='font-bold text-lg text-zinc-900 ml-2 logo-text'>Le Quasimodo</p>
             </nav>
             {
               userLogged ? (

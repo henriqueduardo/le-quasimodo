@@ -113,3 +113,28 @@
     height: 150px;
     object-fit: cover;
 }
+
+@media (max-width: 450px) {
+    .receitas-bg {
+        background: #fff;
+    }
+    .receita-box {
+        display: flex;
+        flex-direction: column;
+    }
+    .preparo-box {
+        width: 100%;
+    }
+    .queijo-svg {
+        width: 50px;
+        position: absolute;
+        top: 320px;
+        left: 30px;
+    }
+    .trigo-svg {
+        width: 50px;
+    position: absolute;
+    top: 320px;
+    left: 120px;
+    }
+}

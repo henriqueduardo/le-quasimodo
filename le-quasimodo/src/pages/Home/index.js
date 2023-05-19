@@ -37,7 +37,7 @@ const Home = () => {
         </section>
 
         <aside className='receita-bg'>
-          <div className='flex container sm:px-12 p-4 justify-between items-center'>
+          <div className='flex container sm:px-12 p-4 justify-between flex-wrap items-center'>
             <div className='receita-text'>
               <span className='text-zinc-700 italic'>Faça você mesmo uma das nossas receitas</span>
               <h1 className='text-zinc-900 mb-6'>PIZZA SICILIANA BACON E CEBOLA</h1>

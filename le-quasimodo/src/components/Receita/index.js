@@ -25,7 +25,7 @@ const Receita = ({ name, descricao, tempo, porcoes, URLreceitaUm, ReceitaSugesUm
       </div>
 
         <section>
-          <div className='container sm:px-12 p-4 flex'>
+          <div className='container sm:px-12 p-4 flex receita-box'>
             <div className='preparo-box'>
               <h2 className='uppercase massa-title'>massa</h2>
               <ul className='massa-list'>

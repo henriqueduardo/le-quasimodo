@@ -24,3 +24,12 @@
       transform: translateX(100%);
     }
 }
+
+@media (max-width: 450px) {
+  .logo-icon {
+    width: 30px;
+  }
+  .logo-text {
+    font-size: 12px;
+  }
+}
