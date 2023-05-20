@@ -17,6 +17,7 @@ import EditProduct from './pages/EditarProdutos';
 import ProductInfo from './pages/ProdutoInfo';
 import Carrinho from './pages/Carrinho';
 import PedidoCompleto from './pages/PedidoCompleto';
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
@@ -50,6 +51,7 @@ function App() {
               <Route path='/receitaPeperoni' element={<ReceitaPeperoni/>}/>
               <Route path='/receitaQueijo' element={<ReceitaQueijo/>}/>
               <Route path='/receitaCalabresa' element={<ReceitaCalabresa/>}/>
+              <Route path='/*' element={<NotFound/>}/>
               <Route path='/admin' element={
                 <PrivateRoute>
                   <Admin/>

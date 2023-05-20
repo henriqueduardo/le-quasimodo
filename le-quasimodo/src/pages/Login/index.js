@@ -19,7 +19,6 @@ const Login = () => {
       ...inputValues,
       [evento.target.name]: evento.target.value
     })
-    console.log(inputValues);
   };
 
   const handleSubmit = async (event) => {
