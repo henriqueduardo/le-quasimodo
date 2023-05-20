@@ -3,7 +3,7 @@
 Projeto de um e-commerce para uma pizzaria, é possível criar uma conta, realizar login, adicionar produtos ao carrinho, fazer pedidos e cadastrar novos produtos através de um CRUD.
 
 
-<img src="../pizzaria-reactjs/assets/20230520_143540_print.jpg" width=400px/>
+<img src="https://images2.imgbox.com/74/50/d3d42QfF_o.jpg" width=400px/>
 
 # Tecnologias utilizadas
 
